@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+           <div class="logo">
+                <div class="menu">
+                    <div class="hamburger-menu">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+
+                    </div>
+                    <div class="menu-links">
+                        <a href="#">Search results</a>
+                        <a href="#">All team</a>
+                        <a href="#">core</a>
+                        <a href="#">Developers</a>
+                        <a href="#">Designers</a>
+                        <a href="#">Mentors</a>
+
+                    </div>
+                </div>
+                <i class="fa-solid fa-circle-play"></i>
+            </div>
+
+
+            <!-- Drop down menu -->
+
+            <select id="dropdown-menu">
+                <option>Search results</option>
+                <option>All team</option>
+                <option>core</option>
+                <option>Developers</option>
+                <option>Designers</option>
+                <option>Mentors</option>
+            </select>
+
+            <!--  -->
+
+
+            <nav>
+                <ul>
+                    <li><a href="#">Search results</a></li>
+                    <li><a href="#">All team</a></li>
+                    <li><a href="#">core</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Designers</a></li>
+                    <li><a href="#">Mentors</a></li>
+                </ul>
+            </nav>
+
+            <input type="text" id="search-input" placeholder="Search movies by title">
+        </div>
+    </header>
+
+    <main>
+        <div id="movies"></div>
+
+        <div id="modal">
+            <div id="modal-content">
+                <span id="modal-close">&times;</span>
+                <div id="movie-details"></div>
+            </div>
+        </div>
+
+        <div id="pagination">
+            <button id="prev-button" disabled><i class="fa fa-arrow-left"></i>Previous</button>
+            <button id="next-button" disabled>Next  <i class="fa fa-arrow-right"></i> </button>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © 2023 www.iMovies.com. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
